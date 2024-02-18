@@ -1,18 +1,15 @@
-window.alert("I am learning javascript");
-document.write("I am Anuprova Mondal ");
+var age = prompt();
 
-document.getElementById("idh1").innerHTML = "This is H1";
-document.getElementById("idh3").innerHTML = "This is H3";
+if(age >= 50){
+    console.log("Old!")
+}else if (age < 50 && age >=30) {
+    console.log("Under 50 but above or equal 30!");
+} else if (age < 30 && age >=18) {
+    console.log ("Under 30 but above or equal 18");
+} else if (age < 18 && age > 0)
+{
+    console.log("under 18!");
+} else{
+    console.log("Invalid Input!");
+}
 
-console.log("This is JavaScript");
-
-var x;
-x = prompt("Enter Your Name: ");
-document.write(x);
-
-var C = prompt("Please enter temperature: ");
-var result = 9/5*C + 32;
-alert("Fahrenheit: " + result + " Degree");
-console.log("Task Complete!");
-
- 
