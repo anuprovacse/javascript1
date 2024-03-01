@@ -138,31 +138,6 @@ var optionCon = isNaN(option);
 if(num1Con || num2Con || optionCon ){
 console.log("Invalid Input!")
 }
-/*else { 
-    switch(option){
-        case 1:
-            result: num1 + num2;
-            break;
-        case 2:
-            result: num1 - num2;
-            break;
-        case 3:
-            result: num1 * num2;
-            break;
-        case 4:
-            result: num1 / num2;
-            break;
-        default:
-            break;
-    }
-    
-    if(result == null){
-    console.log("No Result!"); 
-      }
-   else{
-      console.log("Result: " + result);
-    }
-}*/
 else {
     switch (option) {
         case 1:
@@ -188,3 +163,79 @@ else {
         console.log("Result: " + result);
     }
 }
+
+// while loop
+
+var i = 1;
+
+/*while(i <=5 ){
+    console.log("This is Anu ");
+    i++
+}
+
+while(i <=10){
+    console.log(i);
+    i++;
+}*/
+
+var sum = 0;
+var product = 1;
+
+while(i <=10){
+sum = sum + i;
+product = product * i;
+i++;
+}
+console.log("Sum is " + sum);
+console.log("Product is " + product);
+
+//for loop
+
+for (var j = 1; j<=5 ; j++) {
+    console.log(j);
+}
+
+console.log("Break");
+for (var k = 5; k >=1; k-- ) {
+    console.log(k);
+} 
+console.log("Break");
+// break 
+
+for(var i=1; i<=5; i++ ) {
+    console.log(i);
+    if ( i == 3) {
+         break;
+    }
+
+}
+
+console.log("Break");
+
+// continue to skip thing
+
+for (var i =1; i <= 10; i++){
+    if(i % 2 == 1) {
+        continue;
+    }
+    console.log(i);
+} 
+console.log("Break");
+
+// String and array
+
+let name1 = "I am learning Javascript!";
+let len =name1.length;
+
+let food = ["Cake", "Chocolate", "Ice Cream"];
+let len1 = food.length;
+
+for(var i = 0; i < len; i++) {
+    console.log(`Index : ${i}`);
+    console.log(name1[i]); 
+}
+console.log("Break");
+for(var i = 0; i < len1; i++) {
+    console.log(`Index : ${i}`);
+    console.log(food[i]); 
+} 
